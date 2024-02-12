@@ -68,5 +68,6 @@ def generate_final_response(session):
         for count,answer in enumerate(answers):
             if correct_answers['answers'][count] == answer:
                 score += 1
+        return score
     else:
-        return "Failed"
+        return score
